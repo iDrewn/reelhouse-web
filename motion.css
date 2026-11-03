@@ -62,7 +62,7 @@ h3 { font-size: 24px; line-height: 1.15; font-weight: 700; letter-spacing: -.02e
 .device { position: relative; height: 100%; aspect-ratio: 1306 / 2360; will-change: transform; transform-style: preserve-3d; filter: drop-shadow(0 40px 70px rgba(0,0,0,.5)); }
 .device img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: var(--v, 1); will-change: opacity; }
 .device.wide { aspect-ratio: auto; height: auto; width: min(100%, 640px); }
-.device.wide img { position: relative; border-radius: 22px; opacity: 1; box-shadow: 0 0 0 1px rgba(255,255,255,.1); }
+.device.wide img { position: relative; border-radius: 22px; opacity: var(--v, 1); box-shadow: 0 0 0 1px rgba(255,255,255,.1); }
 .device.wide.plain img { border-radius: 0; box-shadow: none; }
 .device.wide img + img { position: absolute; inset: 0; height: 100%; opacity: var(--v, 0); }
 
