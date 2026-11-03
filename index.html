@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Biokoll – showtimes, trailers and tickets for your local cinema</title>
-  <meta name="description" content="Biokoll shows what's on at your local cinema, what's coming soon, plays the trailer right on the page and takes you to the cinema's own tickets. For iPhone, in Swedish and English.">
-  <meta name="theme-color" content="#78101a">
+  <meta name="description" content="Biokoll shows what is on at your local cinema, what is coming soon, plays the trailer right on the page and takes you to the cinema’s own tickets. For iPhone, in Swedish and English.">
+  <meta name="theme-color" content="#12070a">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta property="og:title" content="Biokoll">
@@ -13,127 +13,83 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://idrewn.github.io/reelhouse-web/">
   <meta property="og:image" content="https://idrewn.github.io/reelhouse-web/assets/og.jpg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="./"><span class="brand-icon"><svg class="app-icon" viewBox="0 0 1024 1024" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ed332e"/><stop offset="1" stop-color="#800509"/></linearGradient><radialGradient id="wh" cx=".5" cy=".5" r=".55"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><clipPath id="ch"><rect width="1024" height="1024" rx="229"/></clipPath><filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-opacity=".35"/></filter></defs><g clip-path="url(#ch)"><rect width="1024" height="1024" fill="url(#gh)"/><rect width="1024" height="1024" fill="url(#wh)"/><g filter="url(#sh)"><g class="reel"><path fill="#fff" fill-rule="evenodd" d="M172.0 512.0a340 340 0 1 0 680 0a340 340 0 1 0 -680 0ZM597.5 614.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM420.0 717.0a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM242.5 614.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM242.5 409.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM420.0 307.0a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM597.5 409.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM450.0 512.0a62 62 0 1 0 124 0a62 62 0 1 0 -124 0Z"/></g></g></g></svg></span>Biokoll</a>
-    <nav aria-label="Main"><a href="#features">Features</a><a href="#screens">Screens</a><a href="#details">Details</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
-  </div>
-</header>
-
+<div class="ambient" aria-hidden="true"></div>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="./"><img src="assets/icon.png" alt="" width="24" height="24">Biokoll</a>
+  <ul><li><a href="#films">Films</a></li><li><a href="#details">Details</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li></ul>
+  <a class="buy" href="https://testflight.apple.com/join/zVCBJX56">Join the beta</a>
+</div></header>
 <main>
-  <div class="stage">
-    <div class="wrap hero">
-      <div class="icon"><svg class="app-icon" viewBox="0 0 1024 1024" role="img" aria-label="Biokoll app icon" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ed332e"/><stop offset="1" stop-color="#800509"/></linearGradient><radialGradient id="wx" cx=".5" cy=".5" r=".55"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><clipPath id="cx"><rect width="1024" height="1024" rx="229"/></clipPath><filter id="sx" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-opacity=".35"/></filter></defs><g clip-path="url(#cx)"><rect width="1024" height="1024" fill="url(#gx)"/><rect width="1024" height="1024" fill="url(#wx)"/><g filter="url(#sx)"><g class="reel"><path fill="#fff" fill-rule="evenodd" d="M172.0 512.0a340 340 0 1 0 680 0a340 340 0 1 0 -680 0ZM597.5 614.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM420.0 717.0a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM242.5 614.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM242.5 409.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM420.0 307.0a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM597.5 409.5a92 92 0 1 0 184 0a92 92 0 1 0 -184 0ZM450.0 512.0a62 62 0 1 0 124 0a62 62 0 1 0 -124 0Z"/></g></g></g></svg></div>
-      <h1>Biokoll</h1>
-      <p class="lead">What&rsquo;s on at your local cinema, what&rsquo;s coming, and the trailer, right on the page. Scroll and the reel spins.</p>
-      <p style="margin:0 0 14px;"><span class="badge">In development &middot; iPhone &middot; iOS 26</span></p>
-      <div class="showcase">
-        <img src="assets/screen-now-showing.jpg" alt="The Now showing screen: a grid of film posters with the day and age filters above it" width="800" height="1739">
-        <img class="center" src="assets/screen-day-filter.jpg" alt="Thursday picked in the day filter, with each poster showing that day's times" width="800" height="1739">
-        <img src="assets/screen-movie.jpg" alt="A movie page with the poster, showtimes by day and the plot" width="800" height="1739">
-      </div>
-      <p class="note">Screenshots use fictional films, posters and cinemas.</p>
+<section class="stage hero" id="top" style="--n:3.3" data-stage data-bg="#12070a" data-glow="217,36,43">
+  <div class="pin">
+    <div class="hero-copy" data-beat="-1,-0.5,0.2,0.46" data-travel="-110">
+      <p class="eyebrow">Showtimes · trailers · tickets</p>
+      <h1>Biokoll.<br><span class="grad">What&rsquo;s on. What&rsquo;s next.</span></h1>
+      <p class="lead">What&rsquo;s on at your local cinema, what&rsquo;s coming, and the trailer right on the page.</p>
+      <div class="cta"><a class="pill fill" href="https://testflight.apple.com/join/zVCBJX56">Join the beta</a><a class="pill line" href="#films">See the films</a></div>
     </div>
-    <div class="bulbs" aria-hidden="true"></div>
+    <p class="hero-tag" data-beat="0.42,0.62,2,3" data-travel="50">Pick a film.<br><span class="grad">Pick a time.</span></p>
+    <div class="fan"><div class="device" data-motion="fan" data-i="0" data-n="3"><img src="assets/phone-coming.png" alt="Coming soon, grouped by month" width="1306" height="2360" loading=eager></div><div class="device" data-motion="fan" data-i="1" data-n="3"><img src="assets/phone-now.png" alt="Now showing: a grid of posters" width="1306" height="2360"></div><div class="device" data-motion="fan" data-i="2" data-n="3"><img src="assets/phone-movie.png" alt="A movie page with showtimes" width="1306" height="2360" loading=eager></div></div>
   </div>
-
-  <section id="features">
-    <div class="wrap">
-      <h2>The whole programme, in your pocket</h2>
-      <p class="sub">Pick your cinema and see what&rsquo;s on, find a time that suits you and go.</p>
-      <div class="grid">
-        <div class="ticket"><div class="kicker">Now showing</div><h3>Everything on at your cinema</h3>
-          <p>Posters, times and details for the shows coming up, soonest first. Switch between five cinemas in southern Sweden with one tap.</p></div>
-        <div class="ticket"><div class="kicker">Filters</div><h3>Pick a day, pick an age</h3>
-          <p>Choose any day to see that day&rsquo;s films with their times, or show only films for under 15 or for 15 and over. Films without an age rating are listed separately, never guessed.</p></div>
-        <div class="ticket"><div class="kicker">Coming soon</div><h3>Premieres, by month</h3>
-          <p>Films with a premiere date that aren&rsquo;t on the schedule yet, grouped by month, so you know what to look forward to.</p></div>
-        <div class="ticket"><div class="kicker">Trailers</div><h3>Right on the page</h3>
-          <p>Tap play on the poster and the page scrolls to the trailer and starts it. It plays in place, with no jump out of the app.</p></div>
-        <div class="ticket"><div class="kicker">Tickets</div><h3>From the cinema itself</h3>
-          <p>Tap a time and the cinema&rsquo;s own ticket page opens inside the app. Biokoll never sees or handles your payment.</p></div>
-        <div class="ticket"><div class="kicker">Languages</div><h3>Svenska and English</h3>
-          <p>Switch in one tap. Dates, times and labels follow along. Film descriptions come from the cinema and stay in Swedish.</p></div>
-        <div class="ticket"><div class="kicker">Offline</div><h3>Saved for later</h3>
-          <p>The latest schedule and the posters are kept on your phone, so you can check what&rsquo;s on even without a connection.</p></div>
-        <div class="ticket"><div class="kicker">Private</div><h3>No accounts, no tracking</h3>
-          <p>No sign-up, no ads and no analytics. <a href="privacy.html">Read the privacy policy</a>.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="reel" id="screens">
-    <div class="wrap">
-      <h2>A look inside</h2>
-      <p class="sub">Built for iOS 26 with the Liquid Glass design. Shown on an iPhone 18 Pro simulator, with fictional films.</p>
-      <div class="screens">
-        <figure><img src="assets/screen-now-showing.jpg" alt="Now showing, a grid of posters" loading="lazy" width="800" height="1739"><figcaption>Now showing</figcaption></figure>
-        <figure><img src="assets/screen-day-filter.jpg" alt="The day filter with times on each poster" loading="lazy" width="800" height="1739"><figcaption>Pick a day</figcaption></figure>
-        <figure><img src="assets/screen-movie.jpg" alt="A movie page with showtimes" loading="lazy" width="800" height="1739"><figcaption>Movie page</figcaption></figure>
-        <figure><img src="assets/screen-coming.jpg" alt="Coming soon, grouped by month" loading="lazy" width="800" height="1739"><figcaption>Coming soon</figcaption></figure>
-        <figure><img src="assets/screen-cinemas.jpg" alt="The cinemas list with call, email and map buttons and the language switch" loading="lazy" width="800" height="1739"><figcaption>Cinemas and language</figcaption></figure>
-      </div>
-    </div>
+</section>
+<section class="stage" id="films" style="--n:6.0" data-stage data-bg="#12070a" data-glow="217,36,43">
+  <i class="mark" aria-hidden="true" data-bg="#12070a" data-glow="217,36,43" style="position:absolute;left:0;top:16.67%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#1a0a10" data-glow="230,80,90" style="position:absolute;left:0;top:33.33%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#1a0c18" data-glow="200,60,150" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#16080c" data-glow="217,36,43" style="position:absolute;left:0;top:66.67%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#12070a" data-glow="217,36,43" style="position:absolute;left:0;top:83.33%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.150,0.250">
+        <p class="eyebrow">Now showing</p>
+        <h2>Everything on at your cinema.</h2>
+        <p>Posters, times and details for the shows coming up, soonest first. Switch between five cinemas in southern Sweden with one tap.</p>
+      </div><div class="beat" data-beat="0.150,0.250,0.350,0.450">
+        <p class="eyebrow">Filters</p>
+        <h2>Pick a day. Pick an age.</h2>
+        <p>Choose any day to see that day&rsquo;s films with their times, or show only films for a certain age. Films without an age rating are listed separately, never guessed.</p>
+      </div><div class="beat" data-beat="0.350,0.450,0.550,0.650">
+        <p class="eyebrow">Coming soon</p>
+        <h2>Premieres, by month.</h2>
+        <p>Films with a premiere date that aren&rsquo;t on the schedule yet, grouped by month, so you know what to look forward to.</p>
+      </div><div class="beat" data-beat="0.550,0.650,0.750,0.850">
+        <p class="eyebrow">Movie page</p>
+        <h2>Showtimes, plot and trailer.</h2>
+        <p>Tap play on the poster and the page scrolls to the trailer and starts it. Tap a time and the cinema&rsquo;s own ticket page opens inside the app.</p>
+      </div><div class="beat" data-beat="0.750,0.850,2.000,3.000">
+        <p class="eyebrow">Cinemas</p>
+        <h2>Your cinema, your language.</h2>
+        <p>Call, email or open the map, and switch between Svenska and English in one tap.</p>
+      </div></div>
+    <div class="devwrap"><div class="device" data-motion="sway"><img data-beat="-1.000,-0.500,0.140,0.260" src="assets/phone-now.png" alt="Now showing" loading="lazy" width=1306 height=2360><img data-beat="0.140,0.260,0.340,0.460" src="assets/phone-day.png" alt="The day filter" loading="lazy" width=1306 height=2360><img data-beat="0.340,0.460,0.540,0.660" src="assets/phone-coming.png" alt="Coming soon" loading="lazy" width=1306 height=2360><img data-beat="0.540,0.660,0.740,0.860" src="assets/phone-movie.png" alt="A movie page" loading="lazy" width=1306 height=2360><img data-beat="0.740,0.860,2.000,3.000" src="assets/phone-cinemas.png" alt="The cinemas list" loading="lazy" width=1306 height=2360></div></div>
   </div>
-
-  <section id="details">
-    <div class="wrap">
-      <h2>The details</h2>
-      <p class="sub">What is in the app today.</p>
-      <div class="facts">
-        <div>
-          <h3>Screens</h3>
-          <ul>
-            <li>Now showing: a poster grid with the next show on each film</li>
-            <li>Coming soon: premieres grouped by month</li>
-            <li>Movie page: showtimes by day, plot, director, cast and the trailer</li>
-            <li>Cinemas: call, email or open the map, and switch language</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Filters</h3>
-          <ul>
-            <li>Day: the days with shows, or any date from a calendar</li>
-            <li>Age: all ages, under 15, or 15 and over</li>
-            <li>Films without an age rating appear in their own labelled section</li>
-            <li>One tap clears the filters, and the default view shows everything</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Good to know</h3>
-          <ul>
-            <li>Saved schedule and posters for use without a connection</li>
-            <li>Times are Swedish local time</li>
-            <li>Light and dark appearance</li>
-            <li>Trailers play from YouTube&rsquo;s embedded player, only when you tap play</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Requirements</h3>
-          <ul>
-            <li>iPhone with iOS 26 or later</li>
-            <li>An internet connection to refresh the schedule</li>
-            <li>Not on the App Store yet</li>
-          </ul>
-        </div>
-      </div>
-      <p style="margin-top:32px;">
-        <a class="button" href="support.html">Get support</a>
-        <a class="button secondary" href="privacy.html">Privacy policy</a>
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer>
+</section>
+<section class="stage numbers" style="--n:2.6" data-stage data-bg="#160914" data-glow="200,40,120">
+  <div class="pin"><div class="row" data-zoom><div><div class="n grad" data-count="5" data-pre="" data-suf="">0</div><div class="l">cinemas</div></div><div><div class="n grad" data-count="2" data-pre="" data-suf="">0</div><div class="l">languages</div></div><div><div class="n grad" data-count="0" data-pre="" data-suf="">0</div><div class="l">accounts</div></div></div><p class="sentence">Reads the cinemas&rsquo; own public programme. No accounts, no ads and no tracking.</p></div>
+</section>
+<section class="block center" id="details" data-bg="#12070a" data-glow="217,36,43">
   <div class="wrap">
-    <p>&copy; 2026 Anders Johansson. Biokoll is made by <a href="https://github.com/iDrewn">Anders Johansson</a>.</p>
-    <p>Biokoll is an independent app. It is not affiliated with or endorsed by any cinema or booking provider, and the show information it displays belongs to the cinemas. The films, posters and cinemas in the screenshots are fictional. iPhone is a trademark of Apple Inc.</p>
+    <p class="eyebrow" data-reveal>Details</p>
+    <h2 data-reveal>The whole programme, in your pocket.</h2>
+    
+    <div class="bento"><div class="tile w4 hot" data-reveal><span class="k">Offline</span><h3>Saved for later.</h3><p>The latest schedule and the posters are kept on your phone, so you can check what&rsquo;s on even without a connection. A banner says when it was last updated.</p></div><div class="tile " data-reveal><span class="k">Trailers</span><h3>Right on the page.</h3><p>They play in place, only when you tap play.</p></div><div class="tile " data-reveal><span class="k">Tickets</span><h3>From the cinema itself.</h3><p>Biokoll never sees or handles your payment.</p></div><div class="tile " data-reveal><span class="k">Design</span><h3>Built for iOS 26.</h3><p>Liquid Glass, in light and dark appearance.</p></div><div class="tile " data-reveal><span class="k">Time</span><h3>Swedish local time.</h3><p>Showtimes are shown in Swedish local time.</p></div><div class="tile w6" data-reveal><span class="k">Private</span><h3>No accounts, no tracking.</h3><p>No sign-up, no ads and no analytics. <a href="privacy.html">Read the privacy policy</a>.</p></div></div>
   </div>
-</footer>
-<script src="assets/spin.js" defer></script>
+</section>
+<section class="cta-block" id="get" data-bg="#12070a" data-glow="217,36,43">
+  <div class="wrap">
+    <img class="icon" src="assets/icon.png" alt="Biokoll app icon" width="132" height="132" data-reveal>
+    <h2 data-reveal>Get Biokoll.</h2>
+    <p class="lead" data-reveal>In TestFlight beta now. For iPhone with iOS 26 or later.</p>
+    <div class="cta" data-reveal><a class="pill fill" href="https://testflight.apple.com/join/zVCBJX56">Join the beta</a><a class="pill line" href="support.html">Support</a></div>
+    
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><p>&copy; 2026 Anders Johansson. Biokoll is made by <a href="https://github.com/iDrewn">Anders Johansson</a>.</p>
+    <p>Biokoll is an independent app. It is not affiliated with or endorsed by any cinema or booking provider, and the show information it displays belongs to the cinemas. The films, posters and cinemas in the screenshots are fictional. iPhone is a trademark of Apple Inc.</p></div></footer>
+<script src="motion.js" defer></script>
 </body>
 </html>
